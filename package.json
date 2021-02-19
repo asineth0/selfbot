@@ -1,0 +1,27 @@
+{
+  "name": "selfbot",
+  "version": "2.0.0",
+  "author": "Asineth <asineth@pm.me>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon -w src src/index.js"
+  },
+  "dependencies": {
+    "bufferutil": "^4.0.3",
+    "erlpack": "^0.1.3",
+    "node-fetch": "^2.6.1",
+    "pako": "^2.0.3",
+    "pino": "^6.11.1",
+    "pino-multi-stream": "^5.2.0",
+    "pino-pretty": "^4.5.0",
+    "utf-8-validate": "^5.0.4",
+    "winston": "^3.3.3",
+    "ws": "^7.4.3",
+    "zlib-sync": "^0.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "nodemon": "^2.0.7"
+  }
+}

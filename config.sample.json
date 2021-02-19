@@ -1,0 +1,25 @@
+{
+    "debug": true,
+    "accounts": [
+      {
+        "id": "main",
+        "token": "",
+        "commands": {
+          "enabled": true,
+          "prefix": "?"
+        },
+        "logging": {
+          "presences": true,
+          "messages": true,
+          "typing": true,
+          "voice": true,
+          "attachments": {
+            "dm": true,
+            "group": true,
+            "guild": true
+          }
+        }
+      }
+    ]
+  }
+  
