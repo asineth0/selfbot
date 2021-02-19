@@ -162,7 +162,7 @@ if (cluster.isMaster) {
             data.d.guild_id
           );
 
-          util.logWrite(`${dir} / events.log`, data);
+          util.logWrite(`${dir}/events.log`, data);
         }
 
         //attachments
