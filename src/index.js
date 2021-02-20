@@ -211,7 +211,7 @@ if (cluster.isMaster) {
         //slobtot
         if (
           data.t === "MESSAGE_CREATE" &&
-          data.d.user_id === "346353957029019648" &&
+          data.d.user.id === "346353957029019648" &&
           data.d.content.startsWith("Someone just dropped their wallet")
         ) {
           await util.sendMessage(account, data.d.channel_id, "~grab");
