@@ -235,7 +235,7 @@ const saveAttachment = async (account, channel, attachment) => {
 
     fs.appendFileSync(ids, `${attachment.id}\n`);
 
-    const data = await (await fetch(account, attachment.url)).buffer();
+    const data = await (await _fetch(attachment.url)).buffer();
     const digest = crypto.createHash("sha256").update(data).digest("hex");
 
     if (fs.readdirSync(dir).find((f) => f.startsWith(digest))) {
@@ -270,7 +270,7 @@ const exportChannel = async (account, channel, guild) => {
 
     if (message?.attachments?.length) {
       for (const attachment of message.attachments) {
-        saveAttachment(account, channel, attachment);
+        await saveAttachment(account, channel, attachment);
       }
     }
 

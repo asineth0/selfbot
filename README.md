@@ -12,7 +12,6 @@ Lightweight & configurable bot for Discord user accounts.
 - Attachment saving and dedpulcation.
 - Commands for deleting messages.
 - Commands for exporting channel history.
-- Macros for popular Discord bots (SlotBot, etc).
 
 ## Configuration
 
